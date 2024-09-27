@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Data Scientist Portfolio showcasing projects, services, skills, and experience">
+    <meta name="author" content="Your Name">
+    <title>Junior Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav__content">
+          <div class="logo"><a href="#">Loise.</a></div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a href="#hero-header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+              I'm <span>Loise Osoro</span>, <br />a Data Scientist
+            </h1>
+            <p class="description">
+              Welcome to my data science portfolio! I'm Loise, a  junior scientist passionate about solving problems with data and machine learning.
+            </p>
+            <div class="action__btns">
+              <button class="hire__me"><a href="#services">my services</a></button>
+              <button class="portfolio"><a href="#contact">Get in touch</a></button>
+            </div>
+          </div>
+          <div class="image">
+            <img src="image/profile2.jpg" alt="profile" />
+          </div>
+        </div>
+      </section>
+
+   <!-- About Me Section -->
+<section id="about" aria-labelledby="about-header">
+    <div class="about-container">
+        <!-- Left-side Image -->
+        <img src="image/profile2.jpg" alt="Profile Image of Your Name" class="about-img">
+        
+        <!-- Right-side Content -->
+        <div id="about-content">
+            <h2 id="about-header">About Me</h2>
+            <p>Hello! I’m Loise Osoro, a passionate junior data scientist and Artificial Intelligence enthusiast with experience in data analysis, machine learning, and visualization. I enjoy uncovering insights from complex datasets and delivering actionable results to drive business decisions.</p>
+            
+            <!-- Buttons for Skills, Education, Experience, and Projects -->
+            <div class="about-buttons">
+                <button onclick="toggleSection('skills-section')">mySkills</button>
+                <button onclick="toggleSection('education-section')">Education</button>
+                <button onclick="toggleSection('experience-section')">Experience</button>
+                <button onclick="toggleSection('projects-section')">Projects</button>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills-section" class="hidden-section">
+                <h3>mySkills</h3>
+                <ul>
+                    <li>Programming Languages: Python, R</li>
+                    <li>Data Analysis: Pandas, NumPy, Scikit-learn</li>
+                    <li>Machine Learning: Supervised and Unsupervised Learning</li>
+                    <li>Data Visualization: Matplotlib, Seaborn, Tableau, PowerBI</li>
+                    <li>Database Management: SQL, PostgreSQL</li>
+                </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div id="education-section" class="hidden-section">
+                <h3>Education</h3>
+                <ul>
+                    <li>2023: BSc in Computer Science, XYZ University</li>
+                    <li>2022: Certification in Machine Learning, ABC Institute</li>
+                    <li>2020: Diploma in Statistics, DEF College</li>
+                </ul>
+            </div>
+  
+             <!-- Projects Section -->
+                <div id="projects-section" class="hidden-section">
+                    <h3>Projects</h3>
+                        <ul>
+                            <li>Project 1: Sales Forecasting (Python, pandas)</li>
+                            <li>Project 2: Customer Segmentation (K-Means clustering)</li>
+                            <li>Project 3: Interactive Dashboard (Tableau)</li>
+                        </ul>
+                </div>
+            <!-- Experience Section -->
+            <div id="experience-section" class="hidden-section">
+                <h3>Experience</h3>
+                <ul>
+                    <li>2024: Data Analyst Intern, ABC Corporation</li>
+                    <li>2023: Junior Data Scientist, XYZ Company</li>
+                    <li>2022: Data Science Intern, DEF Solutions</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+     <!-- Services Section -->
+<section id="services" aria-labelledby="services-header">
+    <h2 id="services-header">Services I offer</h2>
+    <div class="services-container">
+        <div class="service-item">
+            <img src="image/data analytics.png" alt="Data Analysis Icon" class="service-icon">
+            <h3>Data Analysis</h3>
+            <p>I provide data analysis services to help businesses make informed decisions based on data-driven insights.</p>
+        </div>
+        <div class="service-item">
+            <img src="image/machine learning.png" alt="Machine Learning Icon" class="service-icon">
+            <h3>Machine Learning</h3>
+            <p>Utilizing machine learning algorithms, I develop predictive models that optimize business processes.</p>
+        </div>
+        <div class="service-item">
+            <img src="image/data visualization.png" alt="Data Visualization Icon" class="service-icon">
+            <h3>Data Visualization</h3>
+            <p>I create interactive dashboards and visualizations using powerBI tool that make complex data easy to understand and communicate effectively.</p>
+        </div>
+        <div class="service-item">
+            <img src="image/statistical analysis.png" alt="Statistical Analysis Icon" class="service-icon">
+            <h3>Statistical Analysis</h3>
+            <p>Applying statistical techniques to analyze trends and patterns in data for better decision-making.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-header">
+        <h2 id="contact-header">Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to send me a message!</p>
+        <form action="#" method="post" aria-label="Contact Form">
+            <input type="text" name="name" placeholder="Your Name" aria-label="Name" required>
+            <input type="email" name="email" placeholder="Your Email" aria-label="Email" required>
+            <textarea name="message" placeholder="Your Message" aria-label="Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Loise Osoro. All Rights Reserved.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/loise-o-052b06215/" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a> | <a href="https://github.com/Loise84" target="_blank" aria-label="GitHub Profile">GitHub</a></p>
+    </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            // List of all section IDs, including the new Experience section
+            const sections = ['skills-section', 'education-section', 'experience-section', 'projects-section'];
+            
+            // Loop through all sections and hide the ones that are not clicked
+            sections.forEach(function(section) {
+                const element = document.getElementById(section);
+                if (section === sectionId) {
+                    // Toggle visibility of the clicked section
+                    element.style.display = (element.style.display === "block") ? "none" : "block";
+                } else {
+                    // Hide all other sections
+                    element.style.display = "none";
+                }
+            });
+        }
+    </script>    
+    
+</body>
+</html>
